@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 function Main() {
 
     return (
@@ -5,16 +7,16 @@ function Main() {
             <section id="header">
                 <header>
                     <span className="image avatar"><img src="" alt="" /></span>
-                    <h1 id="logo"><a>KimHyeonji</a></h1>
+                    <h1 id="logo">KimHyeonji</h1>
                 </header>
-                <Nav id="nav">
+                <div id="nav">
                     <ul>
                         <li><a href="#one" className="active">Introduction</a></li>
                         <li><a href="#two">SkillSet</a></li>
                         <li><a href="#three">Portfolio</a></li>
                         <li><a href="#five">Contact</a></li>
                     </ul>
-                </Nav>
+                </div>
             </section>
 
             <div id="wrapper">

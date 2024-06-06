@@ -1,11 +1,15 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./Main";
 
 function App() {
   return (
-    <div className="App">
-      <h1>리엑트 포트폴리오</h1>
-      <Main />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />}>
+          <Route index element={<Main />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
