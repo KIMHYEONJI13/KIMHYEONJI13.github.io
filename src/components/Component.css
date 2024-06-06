@@ -1,4 +1,13 @@
 .title-box {
-    border-bottom: 2px solid silver;
-    margin-bottom: 2rem;
+    position: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.title-box h1, h2, h3 {
+    font-family: "Roboto", "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
 }

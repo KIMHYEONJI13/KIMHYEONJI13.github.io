@@ -3,8 +3,14 @@ import { NavLink } from "react-router-dom";
 function Main() {
 
     return (
-        <>
-            <section id="header">
+        <h1> 김현지 </h1>
+    );
+}
+
+export default Main;
+
+
+{/* <section id="header">
                 <header>
                     <span className="image avatar"><img src="" alt="" /></span>
                     <h1 id="logo">KimHyeonji</h1>
@@ -134,10 +140,4 @@ function Main() {
                         </ul>
                     </div>
                 </section>
-            </div>
-        </>
-
-    );
-}
-
-export default Main;
+            </div>  */}

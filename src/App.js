@@ -12,12 +12,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Main />} />
+          {/* <Route index element={<Main />} />
           <Route path="contact" element={<Contact />} />
           <Route path="introduce" element={<Introduce />} />
           <Route path="skill" element={<Skill />} />
           <Route path="portfolio" element={<Portfolio />} />
-          <Route path="etc" element={<Etc />} />
+          <Route path="etc" element={<Etc />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
