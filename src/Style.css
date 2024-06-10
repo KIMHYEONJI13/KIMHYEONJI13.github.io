@@ -1,13 +1,44 @@
+.content {
+    margin: 0 auto;
+    padding: 60px 0 20px;
+    line-height: 2;
+    width: 90%;
+}
+
 h1 {
     display: flex;
     position: flex;
     justify-content: center;
     text-align: center;
-    align-items: center;
+    line-height: normal;
+    font-family: "Roboto", "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #000;
+    margin: 0;
+    unicode-bidi: isolate;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    line-height: normal;
+    color: gray;
+}
+
+h3 {
+    line-height: normal;
+    font-size: 3rem;
+    color: #000;
 }
 
 a {
     cursor: pointer;
+}
+
+#contact {
+    text-align: center;
 }
 
 .icon {
@@ -35,55 +66,3 @@ a {
 .icon-box:hover {
     box-shadow: inset 0 0 0 5px #333;
 }
-
-div {
-    padding: 20px;
-}
-
-/* nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
-nav ul li {
-    margin: 0 10px;
-    cursor: pointer;
-} */
-
-
-/* 고정된 네비게이션 바 스타일링 */
-/* .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  z-index: 1000;
-  padding: 10px 0;
-}
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar ul li {
-  margin: 0 10px;
-  cursor: pointer;
-} */
-
-/* 콘텐츠의 상단 여백 추가 */
-/* .content {
-  padding-top: 60px; 
-}
-
-
-section {
-    padding: 50px 0;
-    border-bottom: 1px solid #ddd;
-} */

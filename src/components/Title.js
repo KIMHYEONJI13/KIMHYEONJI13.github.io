@@ -2,7 +2,7 @@ import '../components/Component.css'
 function Title({ title }) {
     return (
         <>
-            <h1>{title}</h1>
+            <h3>{title}</h3>
         </>
     );
 }
