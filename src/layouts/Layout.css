@@ -1,0 +1,26 @@
+.content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 1000;
+  }
+  
+  .scrollTop:hover {
+    background-color: #555;
+  }
+  

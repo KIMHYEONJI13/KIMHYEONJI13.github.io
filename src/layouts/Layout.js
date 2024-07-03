@@ -1,37 +1,64 @@
-import React from "react";
-import Main from "../pages/Main";
-import Contact from "../pages/Contact";
-import Introduce from "../pages/Introduce";
-import Skill from "../pages/Skill";
-import Portfolio from "../pages/Portfolio";
-import Etc from "../pages/Etc";
-import '../Style.css';
+import React, { useState, useEffect } from 'react';
+import { Outlet } from 'react-router-dom';
+import './Layout.css';
+import Headers from '../components/Headers';
 
-function Layout() {
+const Layout = () => {
+  const [showScroll, setShowScroll] = useState(false);
 
-    return (
-        <div className="content">
-            <div id="main">
-                <Main />
-            </div>
-            <div id="contact">
-                <Contact />
-            </div>
-            <div id="introduce">
-                <Introduce />
-            </div>
-            <div id="skill">
-                <Skill />
-            </div>
-            <div id="portfolio">
-                <Portfolio />
-            </div>
-            <div id="etc">
-                <Etc />
-            </div>
-        </div>
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400) {
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 400) {
+      setShowScroll(false);
+    }
+  };
 
-    );
-}
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', checkScrollTop);
+    return () => {
+      window.removeEventListener('scroll', checkScrollTop);
+    };
+  }, [showScroll]);
+
+  return (
+    <div>
+      <Headers />
+      <div className="content">
+        <Outlet />
+      </div>
+      <button
+        className="scrollTop"
+        onClick={scrollTop}
+        style={{ display: showScroll ? 'flex' : 'none' }}
+      >
+        &#9650;
+      </button>
+    </div>
+  );
+};
 
 export default Layout;
+
+
+// import React from "react";
+// import '../Style.css';
+// import Headers from "../components/Headers";
+
+// function Layout() {
+
+//     return (
+//         <div className="content">
+            
+//             <Headers />
+            
+//         </div>
+
+//     );
+// }
+
+// export default Layout;

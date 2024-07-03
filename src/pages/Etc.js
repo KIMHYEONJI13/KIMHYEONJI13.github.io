@@ -1,6 +1,3 @@
-import Content2 from "../components/Content2";
-import Title from "../components/Title";
-
 function Etc() {
     const content = (
         <>
@@ -10,14 +7,10 @@ function Etc() {
 
     return (
         <>
-            <Title title="Education" />
-            <Content2
-                date="2024.03.26~2024.06.01"
-                link="https://github.com/orgs/devs-plan/repositories"
-                title="Ketchup"
-                subTitle="그룹웨어 프로그램"
-                content={content}
-            />
+            <h1>Education</h1>
+            <h4>하이미디어 아카데미</h4>
+            <h5>2023.12~2024.06</h5>
+            <p>{content}</p>
         </>
     );
 }
